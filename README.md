@@ -30,13 +30,16 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 Document Object Model aka building HTML in javascript, aka building html the hard way.
+
 2. What is an event?
 An event is a gathering of people, at a specific time and location usually commemorating something of value that Im not invited to because I made up a solid excuse  and my friends think that I am dry cleaning my dog, but in reality I am watching youtube videos by the fun fun functions guy, eating ludicrous amounts of snacks, while trying not to spill the extra spicy habenero sauce from r taco on my key board. However in Java Script, events are a way for websites to gather unique actions from a user and respond accordingly. Like with a click event I could turn the whole page baby poop green when a user clicks on a specific spot. I dont know why I would do that... but I could.
 
 3. What is an event listener?
 An event listener is a function that waits for a specific queue from a user, like a ninja waiting for you to open your car door to paint your house a really specific shade of #8a9b00.
+
 4. Why would we convert a NodeList into an Array?
 We would do that because it makes life easier and by life i mean manipulating it using javascripts array methods.
+
 5. What is a component?
 components are reusible bits of html, css, and javascript.
 ### Git Set up
