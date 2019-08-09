@@ -22,8 +22,41 @@
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
 .then (data =>{
     console.log('api is working',data);
+    const articles = data.data.articles;
+    const cards =document.querySelector('.cards-container');
+    console.log(articles);
     
 })
 
 /// card creator
 
+function cardCreator(articleHeadline, authorImg, nameOfAuthor){
+    const newCard = document.createElement('div');
+    const headLine = document.createElement('div');
+    const author = document.createElement('div');
+    const imgc = document.createElement('div');
+    const authImg = doc.createElement('span');
+    const byAuth = doc.createElement('span');
+
+    ///class assignments
+
+    newCard.classList.add('card');
+    headLine.classList.add('headline');
+    author.classList.add('author');
+    imgc.classList.add('img-container');
+
+///content
+headLine.textContent = articleHeadline;
+author.textContent = nameOfAuthor;
+authImg.src = authorImg;
+console.log = (authorImg);
+
+///append
+
+newCard.appendChild(headLine);
+newCard.appendChild(author);
+author.appendChild(imgc);
+author.appendChild(byAuth);
+
+return newCard;
+}
