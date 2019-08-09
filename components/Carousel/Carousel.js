@@ -17,3 +17,11 @@
     <div class="right-button"> > </div>
   </div>
 */
+/// carousel creator
+
+function carouselCreator(){
+//define 
+const carobody = document.createElement('div');
+const leftbtn = document.createElement('div');
+
+}
