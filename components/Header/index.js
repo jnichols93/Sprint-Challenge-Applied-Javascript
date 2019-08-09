@@ -26,6 +26,10 @@ head.classList.add('header');
 date.classList.add('date');
 temp.classList.add('temp');
 
+//event listener
+h1.addEventListener('click', (e)=>{
+    head.style.backgroundColor ='#8a9b00';
+})
 ///content
 date.textContent=('SCHMAUGUST 9th, 2019');
  h1.textContent=('Lambda Times')
