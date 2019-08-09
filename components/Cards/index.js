@@ -27,6 +27,9 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
     console.log(articles);
     
 })
+.catch (err =>{
+    console.log("YOU DONE FAILD THE SPRINT",error);
+})
 
 /// card creator
 
