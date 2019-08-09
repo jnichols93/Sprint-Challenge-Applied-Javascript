@@ -35,6 +35,13 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
     cards.appendChild(cardCreator(card.headline, card.authorPhoto, card.authorName));
     
     })
+
+    articles.jquery.forEach(card=>{
+        cards.appendChild(cardCreator(card.headline, card.authorPhoto,card.authorName));
+    })
+    articles.node.forEach(card=>{
+        cards.appendChild(cardCreator(card.headline, card.authorPhoto,card.authorName));
+    })
 })
 .catch (err =>{
     console.log("YOU DONE FAILD THE SPRINT",err);
