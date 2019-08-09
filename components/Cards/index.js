@@ -25,10 +25,12 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
     const articles = data.data.articles;
     const cards =document.querySelector('.cards-container');
     console.log(articles);
-    
+    articles.bootstrap.forEach(card =>{
+        cards.appendChild(cardCreator(card.headline, card.authorPhoto,card.authorName));
+    })
 })
 .catch (err =>{
-    console.log("YOU DONE FAILD THE SPRINT",error);
+    console.log("YOU DONE FAILD THE SPRINT",err);
 })
 
 /// card creator
@@ -38,8 +40,8 @@ function cardCreator(articleHeadline, authorImg, nameOfAuthor){
     const headLine = document.createElement('div');
     const author = document.createElement('div');
     const imgc = document.createElement('div');
-    const authImg = doc.createElement('span');
-    const byAuth = doc.createElement('span');
+    const authImg = document.createElement('span');
+    const byAuth = document.createElement('span');
 
     ///class assignments
 
