@@ -23,5 +23,25 @@ function carouselCreator(){
 //define 
 const carobody = document.createElement('div');
 const leftbtn = document.createElement('div');
+const img1 =document.createElement('img');
+const img2 = document.createElement('img');
+const img3 = document.createElement('img');
+const img4 = document.createElement('img');
+const rightbtn = document.createElement('div');
 
+///class assignments
+carobody.classList.add('carousel');
+leftbtn.classList.add('left-button');
+rightbtn.classList.add('right-button');
+
+///content assignment
+leftbtn.textContent = "go back";
+rightbtn.textContent = "next";
+
+
+///append
+
+
+// return 
+return carobody;
 }
