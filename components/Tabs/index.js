@@ -7,3 +7,10 @@
 //
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
+
+function createTabs(topicArray){
+    const topics = documnet.querySelector('.topics');
+    topicArray.array.forEach(element => {
+        
+    });
+}
