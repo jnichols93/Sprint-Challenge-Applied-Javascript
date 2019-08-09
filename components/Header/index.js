@@ -27,9 +27,9 @@ date.classList.add('date');
 temp.classList.add('temp');
 
 ///content
- date.textContent('Schmaugust 9th, 2019');
- h1.textContent('Lambda Times');
- temp.textContent('98 Degrees');
+date.textContent('SMARCH 28, 2019');
+ h1.textContent('Lambda Times')
+ temp.textContent('98 Degrees')
 
  ///append the children
 
