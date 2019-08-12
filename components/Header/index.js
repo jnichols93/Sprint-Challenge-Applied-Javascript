@@ -9,4 +9,36 @@
 //  </div >
 // And add it to the DOM in the .headerContainer component
 
-function Header() {}
+
+const ltHeader = document.querySelector('.header-container');
+ltHeader.appendChild(buildHeader());
+
+function buildHeader() {
+    //define elements
+const head = document.createElement('div');
+const date = document.createElement('span');
+const h1 = document.createElement('h1');
+const temp = document.createElement('span');
+
+//class
+
+head.classList.add('header');
+date.classList.add('date');
+temp.classList.add('temp');
+
+//event listener
+h1.addEventListener('click', (e)=>{
+    head.style.backgroundColor ='#8a9b00';
+})
+///content
+date.textContent=('SCHMAUGUST 9th, 2019');
+ h1.textContent=('Lambda Times')
+ temp.textContent=('98 Degrees')
+
+ ///append the children
+
+ head.appendChild(date);
+ head.appendChild(h1);
+ head.appendChild(temp);
+ return head;
+}
